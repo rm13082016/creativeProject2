@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Creative Project 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="root">
+            <div id="page_title">
+                <h1>Star Wars Info</h1>
+            </div>
+            <div id="header">
+                <h2>Browse a variety of information about planets, starships, vehicles, people, and species from Star Wars.</h2>
+            </div>
+            <div id="content">
+                <div id="filters">
+                    <p>Use the following filters to begin searching.</p>
+                    <div id="main">
+                        <label for="mainTopic">Main Topic</label><br>
+                        <select id="mainTopic" onchange="loadTopic()">
+                            <option value="select" selected="selected">Select...</option>
+                            <option value="planets">Planets</option>
+                            <option value="starships">Starships</option>
+                            <option value="vehicles">Vehicles</option>
+                            <option value="people">People</option>
+                            <option value="species">Species</option>
+                        </select>
+                    </div>
+                    <div id="sub">
+                        
+                    </div>
+                </div><br><br>
+                <div id="results">
+                    
+                </div>
+            </div>
+            <div id="footer">
+                <a href="https://github.com/rm13082016/creativeProject2">URL to Github</a>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.2/dist/vue.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

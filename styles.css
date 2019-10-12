@@ -2,11 +2,21 @@ body {
     background-color: black;
     background-image: url("stars.jpg");
     color: yellow;
+    text-shadow: 
+        5px 5px black,
+        5px 5px black,
+        5px 5px black,
+        5px 5px black;
+        font-family: sfdistantgalaxyregular, Arial, sans-serif;
+        font-weight: bold;
+        font-style: normal;
+    cursor: url('cursor/working.gif'), url('cursor/normal.cur'), auto;    
 }
 
 table {
-    background-color: grey;
+    background-color: black;
     margin: auto;
+    text-shadow: none;
 }
 th {
     border-bottom: 1px solid black;
@@ -22,15 +32,32 @@ tr:hover {
     color: black;
 }
 
+a {
+    color: yellow;
+    margin: auto;
+}
+#root {
+    width: 100%;
+    overflow-y: auto;
+}
+
 #pagetitle, #headers, #filters, h1, h2, a {
     text-align: center;
 }
 
 #results {
     overflow-x: auto;
+    height: 60%;
 }
 
 #footer {
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+
+#theme {
+    height: 1px;
     position: absolute;
     bottom: 0px;
 }

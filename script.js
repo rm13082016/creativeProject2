@@ -1,6 +1,7 @@
 var page = 1;
 const proxyurl = "https://cors-anywhere.herokuapp.com/";
 function loadTopic(){
+  document.body.style.cursor = "cursor/busy.gif";
   document.getElementById("results").innerHTML = "";
   if(document.getElementById("mainTopic").value == "select"){
     document.getElementById("sub").innerHTML = "";
